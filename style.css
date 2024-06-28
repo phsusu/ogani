@@ -1,0 +1,98 @@
+*{ box-sizing: border-box;
+margin: 0;}
+
+header { width: 13%;
+height: 100vh;
+background-color: black;
+padding: 20px;
+position: sticky;
+font-family: "Quicksand", sans-serif;
+top: 0;}
+
+header a { color: white;
+text-decoration: none;}
+
+header ul { list-style: none;
+padding: 0;
+margin-top: 40px;}
+
+header li { margin-bottom: 15px;}
+
+header svg { fill: white;
+height: 15px;
+margin-right: 15px;}
+
+body { display: flex;}
+
+main { width: 87%;
+background-image: url(img_9.jpg.webp);
+background-size: 100%;
+background-attachment: fixed;
+background-color: rgba(0, 0, 0, 0.5);
+background-blend-mode: multiply;}
+
+
+#Welcome {display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    font-family: "Oswald", sans-serif;
+ }
+
+ #Welcome h1 { font-weight: 400;
+font-size: 64px;}
+
+ #Welcome p { width: 60%;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#contato { display: inline-block;
+width: 164px;
+height: 53px;
+background-color: #df0e62;
+border-radius: 30px;
+text-align: center;
+line-height: 53px;
+color: white;
+text-decoration: none;
+font-family: "Quicksand" , sans-serif;}
+
+
+#fotos { display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+background-color: black;
+row-gap: 6px;}
+
+#fotos div { width: 33%;
+height: 300px;
+overflow: hidden; 
+position: relative;}
+
+#fotos img { width: 100%;
+    height: 300px;
+object-fit: cover;
+transition: 1S;}
+
+#fotos svg { fill: white;
+position: absolute;
+top: 70%;
+left: 50%;
+height: 30px;
+transform: translate(-50%,-50%);
+opacity: 0;
+transition: 1s;}
+
+
+#fotos div:hover svg { top: 50%;
+opacity: 1;}
+
+#fotos div:hover img { filter: brightness(50%);}
